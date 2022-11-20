@@ -263,3 +263,6 @@ src/Leksts.UmbracoOnAbp.Blazor.Server.Tiered/Logs/*
 
 # Use abp install-libs to restore.
 **/wwwroot/libs/*
+
+# Ignore Sqlite databases
+*.sqlite

@@ -17,7 +17,7 @@ public class UmbracoOnAbpDbContextFactory : IDesignTimeDbContextFactory<UmbracoO
         var configuration = BuildConfiguration();
 
         var builder = new DbContextOptionsBuilder<UmbracoOnAbpDbContext>()
-            .UseSqlServer(configuration.GetConnectionString("Default"));
+            .UseSqlite(configuration.GetConnectionString("Default"));
 
         return new UmbracoOnAbpDbContext(builder.Options);
     }
